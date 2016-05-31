@@ -8,6 +8,4 @@ public class Movie {
     private String title = null;
     private String synopsis = null;
     private String director = null;
-
-
 }
