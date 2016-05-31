@@ -59,5 +59,7 @@ public class BasicMovieManager {
         movieManager.persistMovie(topGun);
         movieManager.persistMovie(jaws);
         movieManager.findAll();
+
+        movieManager.sessionFactory.close();
     }
 }
