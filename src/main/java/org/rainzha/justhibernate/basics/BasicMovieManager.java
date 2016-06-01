@@ -5,6 +5,8 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.rainzha.justhibernate.domain.Movie;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 public class BasicMovieManager {
@@ -38,7 +40,7 @@ public class BasicMovieManager {
     private void findAll() {
         Session session = sessionFactory.getCurrentSession();
         session.beginTransaction();
-        List<Movie> movies = session.createQuery("from Movie").list();
+        List movies = session.createQuery("from Movie").list();
         session.getTransaction().commit();
         System.out.println("All Movies:" + movies);
     }
@@ -50,11 +52,13 @@ public class BasicMovieManager {
         topGun.setTitle("Top Gun");
         topGun.setDirector("Tony Scott");
         topGun.setSynopsis("When Maverick encounters a pair of MiGs.");
+        topGun.setCreateTime(LocalDateTime.now());
 
         Movie jaws = new Movie();
         jaws.setTitle("Jaws");
         jaws.setDirector("Steven Spielberg");
         jaws.setSynopsis("A tale of a white shark!");
+        jaws.setCreateTime(LocalDateTime.now());
 
         movieManager.persistMovie(topGun);
         movieManager.persistMovie(jaws);

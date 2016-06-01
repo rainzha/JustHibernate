@@ -10,5 +10,6 @@
         <property name="title" column="TITLE"/>
         <property name="director" column="DIRECTOR"/>
         <property name="synopsis" column="SYNOPSIS"/>
+        <property name="createTime" column="CREATETIME"/>
     </class>
 </hibernate-mapping>
