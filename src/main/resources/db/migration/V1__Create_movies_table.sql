@@ -1,6 +1,7 @@
-create table MOVIES (
-  ID integer not null auto_increment,
-  TITLE varchar(255),
-  DIRECTOR varchar(255),
-  SYNOPSIS varchar(255),
-  primary key (ID));
+CREATE TABLE MOVIES (
+  ID       INTEGER NOT NULL AUTO_INCREMENT,
+  TITLE    VARCHAR(255),
+  DIRECTOR VARCHAR(255),
+  SYNOPSIS VARCHAR(255),
+  PRIMARY KEY (ID)
+);

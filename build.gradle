@@ -23,4 +23,4 @@ flyway {
     password = 'gh0str@inmysql'
 }
 
-mainClassName = 'org.rainzha.justhibernate.basics.BasicMovieManager'
+mainClassName = 'org.rainzha.justhibernate.annotations.AnnotationEmployeeTest'

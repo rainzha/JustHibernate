@@ -16,5 +16,6 @@
         <property name="show_sql">true</property>
 
         <mapping resource="Movie.hbm.xml"/>
+        <mapping class="org.rainzha.justhibernate.annotations.Employee"/>
     </session-factory>
 </hibernate-configuration>
