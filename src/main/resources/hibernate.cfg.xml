@@ -17,5 +17,6 @@
 
         <mapping resource="Movie.hbm.xml"/>
         <mapping class="org.rainzha.justhibernate.annotations.Employee"/>
+        <mapping resource="Showroom.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

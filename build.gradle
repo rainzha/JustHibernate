@@ -23,4 +23,4 @@ flyway {
     password = 'gh0str@inmysql'
 }
 
-mainClassName = 'org.rainzha.justhibernate.annotations.AnnotationEmployeeTest'
+mainClassName = 'org.rainzha.justhibernate.collections.CollectionsTest'
