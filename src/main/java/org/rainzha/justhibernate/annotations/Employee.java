@@ -18,4 +18,5 @@ public class Employee {
     private String name = null;
     @Enumerated
     private Gender empGender = null;
+    private boolean isDisable;
 }
