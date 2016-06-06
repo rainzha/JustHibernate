@@ -17,6 +17,7 @@ public class AnnotationEmployeeTest {
         session.beginTransaction();
         Employee emp = new Employee();
         emp.setName("M Konda");
+        emp.setEmpGender(Employee.Gender.WOMEN);
 
         session.save(emp);
 
